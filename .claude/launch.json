@@ -6,6 +6,12 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["-m", "http.server", "8123"],
       "port": 8123
+    },
+    {
+      "name": "static-site-verify",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8129"],
+      "port": 8129
     }
   ]
 }

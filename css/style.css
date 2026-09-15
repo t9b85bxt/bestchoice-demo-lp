@@ -377,6 +377,15 @@ h2.title {
   background: linear-gradient(90deg, var(--paper) 0%, rgba(245,242,236,0.94) 32%, rgba(245,242,236,0.55) 56%, rgba(245,242,236,0.1) 78%);
 }
 
+@media (max-width: 760px) {
+  /* 横方向グラデーションだと、見出しが折り返して全幅近くまで文字が伸びた時に
+     右側の透けた部分で写真と文字の色が同化してしまうため、スマホでは
+     全体を均一に覆う薄紙色のオーバーレイに切り替えて可読性を確保する */
+  .hero-scrim {
+    background: rgba(245, 242, 236, 0.88);
+  }
+}
+
 .hero-content {
   position: relative;
   z-index: 2;
