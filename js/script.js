@@ -48,4 +48,21 @@
   } else {
     reveals.forEach(function (el) { el.classList.add("is-visible"); });
   }
+
+  // ---- Contact form: demo-only submit (no backend wired up) ----
+  var contactForm = document.getElementById("contactForm");
+  var formSuccess = document.getElementById("formSuccess");
+
+  if (contactForm && formSuccess) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!contactForm.checkValidity()) {
+        contactForm.reportValidity();
+        return;
+      }
+      contactForm.classList.add("is-submitted");
+      formSuccess.classList.add("is-shown");
+      formSuccess.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  }
 })();

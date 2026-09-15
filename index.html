@@ -44,6 +44,7 @@
       <a href="#pricing">料金</a>
       <a href="#sales">販売・買取</a>
       <a href="#access">アクセス</a>
+      <a href="#contact">お問い合わせ</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
       <svg class="icon" width="26" height="26"><use href="#i-menu"/></svg>
@@ -57,6 +58,7 @@
     <li><a href="#pricing">料金</a></li>
     <li><a href="#sales">販売・買取</a></li>
     <li><a href="#access">アクセス</a></li>
+    <li><a href="#contact">お問い合わせ</a></li>
   </ul>
   <a class="btn btn-call" href="tel:0249254559">
     <span class="btn-call-left"><svg class="icon" width="20" height="20"><use href="#i-phone"/></svg>電話で相談する</span>
@@ -433,6 +435,87 @@
     </div>
   </section>
 
+  <!-- ===================== 11 CONTACT ===================== -->
+  <section class="section-pad contact-section" id="contact">
+    <div class="wrap reveal">
+      <div class="contact-layout">
+        <div class="contact-intro">
+          <p class="eyebrow">CONTACT</p>
+          <h2 class="title">まずは、お気軽にご相談ください。</h2>
+          <p class="lead">お急ぎの方はお電話が確実です。フォームでのお問い合わせも、営業時間内に確認して折り返しご連絡いたします。</p>
+          <div class="contact-quick">
+            <div class="contact-quick-item">
+              <svg class="icon" width="22" height="22"><use href="#i-phone"/></svg>
+              <a href="tel:0249254559" class="nowrap tabular">024-925-4559</a>
+            </div>
+            <div class="contact-quick-item">
+              <svg class="icon" width="22" height="22"><use href="#i-clock"/></svg>
+              <span>9:00〜18:00(水曜・第3土曜定休)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <div class="form-success" id="formSuccess">
+            <svg class="icon" width="24" height="24"><use href="#i-handshake"/></svg>
+            <div>
+              <p>お問い合わせありがとうございます。</p>
+              <p>内容を確認のうえ、営業時間内に担当より折り返しご連絡いたします。</p>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-fields">
+              <div class="form-row form-grid-2">
+                <div>
+                  <label for="cf-name">お名前<span class="required">必須</span></label>
+                  <input type="text" id="cf-name" name="name" autocomplete="name" required>
+                </div>
+                <div>
+                  <label for="cf-tel">電話番号<span class="required">必須</span></label>
+                  <input type="tel" id="cf-tel" name="tel" autocomplete="tel" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label for="cf-email">メールアドレス<span class="optional">任意</span></label>
+                <input type="email" id="cf-email" name="email" autocomplete="email">
+              </div>
+
+              <div class="form-row form-grid-2">
+                <div>
+                  <label for="cf-type">ご相談内容<span class="required">必須</span></label>
+                  <select id="cf-type" name="type" required>
+                    <option value="" disabled selected>選択してください</option>
+                    <option value="持込取付け">持込取付けについて</option>
+                    <option value="新品・中古の購入">新品・中古の購入について</option>
+                    <option value="買取査定">買取査定について</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="cf-size">車種・タイヤサイズ<span class="optional">任意</span></label>
+                  <input type="text" id="cf-size" name="size" placeholder="例:195/65R15">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label for="cf-message">お問い合わせ内容<span class="optional">任意</span></label>
+                <textarea id="cf-message" name="message" placeholder="ご希望日時やご質問など、分かる範囲でご記入ください。"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-call form-submit">
+                <span class="btn-call-left"><svg class="icon" width="20" height="20"><use href="#i-phone"/></svg>この内容で送信する</span>
+              </button>
+
+              <p class="form-note">※本サイトはホームページ制作提案用のデモのため、このフォームは実際には送信されません。実運用の際はフォーム送信システムと連携します。</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="footer-cta">
@@ -459,6 +542,7 @@
         <li><a href="#sales">販売</a></li>
         <li><a href="#buyback">買取</a></li>
         <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
         <li><a href="#top">ページ上部へ ↑</a></li>
       </ul>
     </div>
